@@ -163,7 +163,7 @@ class HeartbeatWorker(
             WorkManager.getInstance(context)
                 .enqueueUniquePeriodicWork(
                     WORK_NAME,
-                    ExistingPeriodicWorkPolicy.UPDATE,
+                    ExistingPeriodicWorkPolicy.REPLACE,
                     workRequest
                 )
         }

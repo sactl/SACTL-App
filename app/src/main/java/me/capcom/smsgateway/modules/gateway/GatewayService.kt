@@ -2,6 +2,8 @@ package me.capcom.smsgateway.modules.gateway
 
 import android.content.Context
 import android.os.Build
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import io.ktor.client.plugins.ClientRequestException
 import io.ktor.http.HttpStatusCode
 import me.capcom.smsgateway.modules.events.EventBus
@@ -36,6 +38,7 @@ class GatewayService(
         SettingsUpdateWorker.start(context)
 
         eventsReceiver.start()
+        STATUS.postValue(true)
     }
 
     fun stop(context: Context) {
@@ -46,6 +49,14 @@ class GatewayService(
         WebhooksUpdateWorker.stop(context)
 
         this._api = null
+        STATUS.postValue(false)
+    }
+
+    @Suppress("UNUSED_PARAMETER")
+    fun isActiveLiveData(context: Context): LiveData<Boolean> = STATUS
+
+    companion object {
+        val STATUS: MutableLiveData<Boolean> = MutableLiveData(false)
     }
     //endregion
 
