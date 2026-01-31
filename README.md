@@ -56,14 +56,14 @@ SMS Received → Encrypt with RSA → Forward to Webhook
 - No analytics or telemetry
 - Open source for audit
 
-## License
 
-Apache 2.0 - See [LICENSE](LICENSE)
-
-## Related Projects
-
-- **Signal Hub** (Private): Backend API for managing Signal Nodes
-
----
-
-**[SACTL_]** - Provisioning shell for AI agent.
+🏗️ Technical Origin & Acknowledgments
+SACTL-App is built upon the robust foundations of the Capcom SMS Gateway(https://github.com/capcom6/android-sms-gateway) project.
+Our Debt to Open Source: We extend our gratitude to the original creators of the SMS Gateway infrastructure. Their work on reliable signal relay provided the stable "bedrock" upon which SACTL is constructed.
+Evolution: While inheriting the core relay logic, SACTL has been heavily refactored and specialized for AI Agent Identity Provisioning, featuring:
+Custom Tactical Terminal UI aesthetic.
+Enhanced E2EE (RSA-4096) signal encapsulation.
+Hardened "Receive-Only" compliance logic for AI safety.
+⚖️ License & Intellectual Property
+Core Logic: This project remains under the original [Apache License 2.0 / MIT] in accordance with the upstream repository requirements.
+Branding & Extensions: All branding elements (including the [SACTL_] logo and the "Provisioning shell" concept), custom UI/UX designs, and specific AI-layer integration logic are the intellectual property of the SACTL Foundation.
