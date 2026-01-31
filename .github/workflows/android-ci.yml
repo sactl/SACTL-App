@@ -25,6 +25,40 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Create google-services.json placeholder
+        run: |
+          cat > app/google-services.json << 'EOF'
+          {
+            "project_info": {
+              "project_number": "000000000000",
+              "project_id": "sactl-signal-placeholder",
+              "storage_bucket": "sactl-signal-placeholder.appspot.com"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+                  "android_client_info": {
+                    "package_name": "me.capcom.smsgateway"
+                  }
+                },
+                "oauth_client": [],
+                "api_key": [
+                  {
+                    "current_key": "AIzaSyPlaceholderKeyForBuildOnly000000"
+                  }
+                ],
+                "services": {
+                  "appinvite_service": {
+                    "other_platform_oauth_client": []
+                  }
+                }
+              }
+            ],
+            "configuration_version": "1"
+          }
+          EOF
+
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
@@ -43,6 +77,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
@@ -58,10 +94,44 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Create google-services.json placeholder
+        run: |
+          cat > app/google-services.json << 'EOF'
+          {
+            "project_info": {
+              "project_number": "000000000000",
+              "project_id": "sactl-signal-placeholder",
+              "storage_bucket": "sactl-signal-placeholder.appspot.com"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+                  "android_client_info": {
+                    "package_name": "me.capcom.smsgateway"
+                  }
+                },
+                "oauth_client": [],
+                "api_key": [
+                  {
+                    "current_key": "AIzaSyPlaceholderKeyForBuildOnly000000"
+                  }
+                ],
+                "services": {
+                  "appinvite_service": {
+                    "other_platform_oauth_client": []
+                  }
+                }
+              }
+            ],
+            "configuration_version": "1"
+          }
+          EOF
+
       - name: Grant execute permission
         run: chmod +x ./gradlew
 
-      - name: Build Release APK
+      - name: Build Debug APK
         run: ./gradlew assembleDebug --no-daemon
 
       - name: Get version
@@ -73,7 +143,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ steps.version.outputs.version }}
+          tag_name: v${{ steps.version.outputs.version }}-${{ github.run_number }}
           name: "[SACTL_] Signal v${{ steps.version.outputs.version }}"
           body: |
             ## [SACTL_] Signal Android
@@ -82,6 +152,11 @@ jobs:
 
             ### Download
             Download the APK below and install on your Android device.
+
+            ### Setup
+            1. Install the APK
+            2. Grant SMS permissions
+            3. Configure webhook URL: `https://api.sactl.ai/v1/webhook/sms`
 
             ### Changes
             See commit history for changes.
