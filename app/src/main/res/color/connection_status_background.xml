@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State: Disconnected -->
+    <item android:color="@color/status_error" android:state_enabled="false" />
+
+    <!-- State: Connected -->
+    <item android:color="@color/terminal_green_dark" android:state_enabled="true" />
+
+    <!-- Default State -->
+    <item android:color="@color/oled_surface_variant" />
+</selector>

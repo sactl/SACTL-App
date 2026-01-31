@@ -1,0 +1,32 @@
+<resources>
+    <string-array name="limit_periods_titles">
+        <item>disabled</item>
+        <item>minute</item>
+        <item>hour</item>
+        <item>day</item>
+    </string-array>
+    <string-array name="limit_periods_values">
+        <item>Disabled</item>
+        <item>PerMinute</item>
+        <item>PerHour</item>
+        <item>PerDay</item>
+    </string-array>
+    <string-array name="sim_selection_modes_titles">
+        <item>OS default</item>
+        <item>Round robin</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="sim_selection_modes_values">
+        <item>OSDefault</item>
+        <item>RoundRobin</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="processing_order_titles">
+        <item>LIFO (newer messages first)</item>
+        <item>FIFO (older messages first)</item>
+    </string-array>
+    <string-array name="processing_order_values" translatable="false">
+        <item>LIFO</item>
+        <item>FIFO</item>
+    </string-array>
+</resources>

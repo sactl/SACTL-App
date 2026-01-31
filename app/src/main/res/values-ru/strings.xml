@@ -1,0 +1,154 @@
+<resources>
+    <string name="address_is">%1$s</string>
+    <string name="api_url_private_token_credentials_etc">URL API, приватный токен, учётные данные и
+        т.д.</string>
+    <string name="api_url">URL API</string>
+    <string name="app_name">SMSGate</string>
+    <string name="app_version_build">Версия приложения (сборка)</string>
+    <string name="battery_optimization_already_disabled">Оптимизация батареи уже отключена</string>
+    <string name="battery_optimization_is_not_supported_on_this_device">Оптимизация батареи не
+        поддерживается на этом устройстве</string>
+    <string name="battery_optimization">Оптимизация батареи</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="by_code">По коду</string>
+    <string name="can_affect_battery_life">может влиять на время работы батареи</string>
+    <string name="click_continue_to_create_an_account_no_personal_information_is_required_nby_continuing_you_agree_to_our_privacy_policy_at_https_docs_sms_gate_app_privacy_policy">Нажмите
+        \"Продолжить\", чтобы создать аккаунт. Личная информация не требуется.\nПродолжая, вы
+        соглашаетесь с Политикой конфиденциальности по адресу
+        https://docs.sms-gate.app/privacy/policy/</string>
+    <string name="cloud_server_dotdotdot">Облачный сервер…</string>
+    <string name="cloud_server">Облачный сервер</string>
+    <string name="cloud">Облако</string>
+    <string name="copied_to_clipboard">Скопировано</string>
+    <string name="credentials">Учётные данные</string>
+    <string name="delays_limits_etc">Задержки, ограничения и т.д.</string>
+    <string name="delays_seconds">Задержка (секунды)</string>
+    <string name="delete_after_days">Удалить через (дней)</string>
+    <string name="device_id">ID устройства</string>
+    <string name="device">Устройство</string>
+    <string name="disabled">Отключено</string>
+    <string name="dots">…</string>
+    <string name="enabled">Включено</string>
+    <string name="encryption">Шифрование</string>
+    <string name="failed_to_change_password">Не удалось изменить пароль: %1$s</string>
+    <string name="failed_to_get_login_code">Не удалось получить код входа: %1$s</string>
+    <string name="failed_to_register_device">Не удалось зарегистрировать устройство: %1$s</string>
+    <string name="id_copied">ID вебхука скопирован в буфер обмена</string>
+    <string name="if_sim_number_is_not_specified_use">Если номер SIM не указан, использовать</string>
+    <string name="ignored_for_public_server">Игнорируется для публичного сервера</string>
+    <string name="information">Информация</string>
+    <string name="internet_connection_available">Интернет-соединение: доступно</string>
+    <string name="internet_connection_unavailable">Интернет-соединение: недоступно</string>
+    <string name="interval_seconds">Интервал (секунды)</string>
+    <string name="invalid_url">Неверный URL</string>
+    <string name="is_not_a_valid_port_must_be_between_1024_and_65535">%1$s не является допустимым
+        портом. Должен быть между 1024 и 65535</string>
+    <string name="label_password">Пароль</string>
+    <string name="label_username">Имя пользователя</string>
+    <string name="limits">Ограничения</string>
+    <string name="list_of_last_50_log_entries">Список последних 50 записей лога</string>
+    <string name="listening_to_the_server_events">Прослушивание событий сервера…</string>
+    <string name="local_address">Локальный адрес</string>
+    <string name="local_server_dotdotdot">Локальный сервер…</string>
+    <string name="local_sms_gateway_notifications">Уведомления локального SMS шлюза</string>
+    <string name="local">Локальный</string>
+    <string name="login_code_expires">Код входа, действует до %1$s</string>
+    <string name="login_code">Код входа</string>
+    <string name="logs">Логи</string>
+    <string name="maximum">Максимум</string>
+    <string name="messages_count">Количество сообщений</string>
+    <string name="messages_header">Сообщения</string>
+    <string name="messages">Сообщения…</string>
+    <string name="minimum">Минимум</string>
+    <string name="more_settings">Другие настройки…</string>
+    <string name="n_a">н/д</string>
+    <string name="new_sms_received_webhooks_registered">Зарегистрирован новый вебхук для входящих
+        сообщений</string>
+    <string name="no_webhooks_found">Вебхуки не настроены</string>
+    <string name="not_registered">не зарегистрировано</string>
+    <string name="not_set">Не задано</string>
+    <string name="notification_title">SMSGate</string>
+    <string name="online_status_at_the_cost_of_battery_life">Время автономной работы может быть
+        снижено</string>
+    <string name="passphrase">Ключ шифрования</string>
+    <string name="password_changed_successfully">Пароль успешно изменён</string>
+    <string name="password_must_be_at_least_14_characters">Пароль должен быть не менее 14 символов</string>
+    <string name="password_must_be_at_least_8_characters">Пароль должен быть не менее 8 символов</string>
+    <string name="password">Пароль</string>
+    <string name="period">Период</string>
+    <string name="ping_service_is_active">Ping-сервис активен</string>
+    <string name="ping">Ping</string>
+    <string name="please_enter_one_time_code_displayed_on_already_registered_device">Введите
+        одноразовый код с уже зарегистрированного устройства</string>
+    <string name="port_credentials_etc">Порт, учётные данные и т.д.</string>
+    <string name="port">Порт</string>
+    <string name="private_token">Приватный токен</string>
+    <string name="public_address">Публичный адрес</string>
+    <string name="require_internet_connection">Требуется интернет-соединение</string>
+    <string name="restart_required_to_apply_changes">Для применения изменений требуется перезапуск</string>
+    <string name="retries_signing_etc">Повторы, подпись и т.д.</string>
+    <string name="retry_count">Количество повторов</string>
+    <string name="send_messages_notification">Отправка сообщений…</string>
+    <string name="sending_webhook">Отправка вебхука…</string>
+    <string name="processing_webhook_queue">Обработка очереди вебхуков…</string>
+    <string name="server_address">Адрес сервера</string>
+    <string name="server">Сервер</string>
+    <string name="set_maximum_value_to_activate">Установите максимальное значение для активации</string>
+    <string name="settings_changed_via_api_restart_the_app_to_apply_changes">Настройки изменены
+        через API. Перезапустите приложение для применения изменений.</string>
+    <string name="settings_local_address_is">&lt;a href>%1$s:%2$d&lt;/a></string>
+    <string name="settings_local_address_not_found">Недоступно</string>
+    <string name="settings_local_server">Локальный сервер</string>
+    <string name="settings_offline">Офлайн</string>
+    <string name="settings_online">Онлайн</string>
+    <string name="settings_public_address_is">&lt;a href>%1$s:%2$d&lt;/a></string>
+    <string name="settings_public_address_not_found">Недоступно</string>
+    <string name="settings_start_on_boot">Автозапуск</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="signing_key">Ключ подписи</string>
+    <string name="sms_gateway_is_running_on_port">SMS шлюз работает на порту %1$d</string>
+    <string name="sms_gateway">SMSGate</string>
+    <string name="success_long_press_to_copy">Успешно, нажмите и удерживайте для копирования</string>
+    <string name="system">Система</string>
+    <string name="tab_text_home">Главная</string>
+    <string name="tab_text_messages">СООБЩЕНИЯ</string>
+    <string name="tab_text_settings">НАСТРОЙКИ</string>
+    <string name="the_webhook_request_will_wait_for_an_internet_connection">Отправка веб-хуков
+        только при наличии интернет-соединения</string>
+    <string name="to_add_a_device_to_an_existing_account_please_fill_in_the_credentials_below">Чтобы
+        добавить устройство к существующему аккаунту, заполните учётные данные ниже.</string>
+    <string name="to_apply_the_changes_restart_the_app_using_the_button_below">Чтобы применить
+        изменения, перезапустите приложение, используя кнопку ниже.</string>
+    <string name="use_empty_to_disable">Оставьте пустым для отключения</string>
+    <string name="use_this_code_to_sign_in_on_another_device">Используйте этот код для входа на
+        другом устройстве</string>
+    <string name="username_must_be_at_least_3_characters">Имя пользователя должно быть не менее 3
+        символов</string>
+    <string name="username">Имя пользователя</string>
+    <string name="view">Просмотр</string>
+    <string name="webhook_id_format">ID: %1$s</string>
+    <string name="webhook_list_summary">Просмотр зарегистрированных вебхуков</string>
+    <string name="webhook_list_title">Зарегистрированные вебхуки</string>
+    <string name="webhooks_dotdotdot">Вебхуки…</string>
+    <string name="webhooks">Вебхуки</string>
+    <plurals name="review_incoming_sms_webhooks">
+        <item quantity="one">У вас зарегистрирован %1$d вебхук для входящих SMS. Просмотрите его,
+            чтобы избежать рисков безопасности.</item>
+        <item quantity="few">У вас зарегистрировано %1$d вебхука для входящих SMS. Просмотрите их,
+            чтобы избежать рисков безопасности.</item>
+        <item quantity="many">У вас зарегистрировано %1$d вебхуков для входящих SMS. Просмотрите их,
+            чтобы избежать рисков безопасности.</item>
+        <item quantity="other">У вас зарегистрировано %1$d вебхуков для входящих SMS. Просмотрите
+            их, чтобы избежать рисков безопасности.</item>
+    </plurals>
+    <string name="processing">Обработка</string>
+    <string name="processing_order_title">Порядок обработки</string>
+    <string name="queue_status">📊 Статус очереди</string>
+    <string name="total_messages">Всего: %1$d</string>
+    <string name="pending_messages">В ожидании: %1$d</string>
+    <string name="sent_messages">Отправлено: %1$d</string>
+    <string name="delivered_messages">Доставлено: %1$d</string>
+    <string name="failed_messages">Сбоев: %1$d</string>
+</resources>

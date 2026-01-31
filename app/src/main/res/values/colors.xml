@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OLED Black Theme - "Hacker" Aesthetic -->
+    <color name="oled_black">#FF000000</color>
+    <color name="oled_surface">#FF0D0D0D</color>
+    <color name="oled_surface_variant">#FF1A1A1A</color>
+
+    <!-- Terminal Green Accent -->
+    <color name="terminal_green">#FF00FF41</color>
+    <color name="terminal_green_dim">#FF00CC33</color>
+    <color name="terminal_green_dark">#FF008F11</color>
+
+    <!-- Cyan Accent (for secondary elements) -->
+    <color name="terminal_cyan">#FF00FFFF</color>
+    <color name="terminal_cyan_dim">#FF00CCCC</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB0B0B0</color>
+    <color name="text_disabled">#FF666666</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#FF00FF41</color>
+    <color name="status_warning">#FFFFCC00</color>
+    <color name="status_error">#FFFF4444</color>
+
+    <!-- Legacy colors (for compatibility) -->
+    <color name="purple_200">#FF00FF41</color>
+    <color name="purple_500">#FF00CC33</color>
+    <color name="purple_700">#FF008F11</color>
+    <color name="teal_200">#FF00FFFF</color>
+    <color name="teal_700">#FF00CCCC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progressBarOverlay">#33FFFFFF</color>
+</resources>
